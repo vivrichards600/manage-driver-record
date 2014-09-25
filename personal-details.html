@@ -89,60 +89,132 @@
 <h2>Personal Details</h2>
 
     <p>
-    <table class="table">
-        <tr>
-            <td><label>Title</label></td>
-            <td><label>Mr</label></td>
-        </tr>
-        <tr>
-            <td><label>Name</label></td>
-            <td><label>Joe Bloggs</label></td>
-        </tr>
-        <tr>
-            <td><label>Gender</label></td>
-            <td><label>Male</label></td>
-        </tr>
-        <tr>
-            <td><label>Date of Birth</label></td>
-            <td><label>01/01/1985</label></td>
-        </tr>
-        <tr>
-            <td><label>Country of Birth</label></td>
-            <td><label>UK</label></td>
-        </tr>
-        <tr>
-            <td><label>Address</label></td>
-            <td><label>1 Liberty Stadium<br>Gods Ground<br>Heaven<br>SA1 1SA</label></td>
-        </tr>
-    <tr>
-        <td><label>Photo</label></td>
-        <td>
-		<img src="images/customer.png">
-        </td>
-    </tr>
-    <tr>
-        <td><label>E-mail address</label></td>
-        <td><label>joe.bloggs@mail-provider.com</label></td>
-    </tr>
-    <tr>
-        <td><label>Home Tel Number</label></td>
-        <td><label>01792 123456</label></td>
-    </tr>
-    <tr>
-        <td><label>Mobile Tel Number</label></td>
-        <td><label>01234567890</label></td>
-    </tr>
-	<tr>
-	</tr>
-	<tr>
-		<td><br></td>
-		</tr>
-	<tr>
-		<td><a href="manage-driver-record.html" class="button">Update</a></td>
-	</tr>
-    </table>
-    </p>
+	
+	
+	
+	<div class="form-item">
+			<label for="title">
+			Title
+			</label>
+			<select id="title" name="title" aria-required="true" autofocus="true">
+        
 
+        <option value="0">Please select</option> 
+            
+            <option value="1" selected="true">Mr</option>
+            
+            <option value="2">Mrs</option>
+            
+            <option value="3">Ms</option>
+            
+            <option value="4">Miss</option>
+            
+            <option value="5">Dr</option>
+            
+            <option value="6">Other</option>
+            
+    </select>
+	</div>
+		
+			<div class="form-item">
+			<label for="name">
+			Name
+			</label>
+			<input id="name" name="name" value="Joe Bloggs" type="text" maxlength="250" autocomplete="off">
+			
+	</div>
+		
+			<div class="form-item">
+			<label for="gender">
+			Gender
+			</label>
+			<select id="gender" name="gender" aria-required="true" autofocus="true">
+        
+
+        <option value="0">Please select</option> 
+            
+            <option value="1" selected="true">Male</option>
+            
+            <option value="2">Female</option>
+            
+    </select>
+	</div>
+		
+			<div class="form-item">
+			<label for="dob">
+			Date of Birth
+			</label>
+			<input id="dob" name="dob" value="11/07/1985" type="text" maxlength="10" autocomplete="off">
+			
+	</div>
+		
+			<div class="form-item">
+			<label for="countryBirth">
+			Country of Birth
+			</label>
+			<select id="countryBirth" name="countryBirth" aria-required="true" autofocus="true">
+        
+
+        <option value="0">Please select</option> 
+            
+            <option value="1" selected="true">United Kingdom</option>
+            
+            <option value="2">Some other place</option>
+            
+    </select>
+			
+	</div>
+		
+			<div class="form-item">
+			<label for="addressLine1">
+			Address
+			</label>
+			<input id="addressLine1" name="addressLine1" value="1 Some Street" type="text" maxlength="250" autocomplete="off">
+			</div>
+			<div class="form-item">
+			<input id="addressLine2" name="addressLine2" value="Some Place" type="text" maxlength="250" autocomplete="off">
+			</div>
+			<div class="form-item">
+			<input id="addressLine3" name="addressLine3" value="Some Town" type="text" maxlength="250" autocomplete="off">
+			</div>
+			
+			
+	<div class="form-item">
+			<label for="postcode">
+			Postcode
+			</label>
+			<input id="postcode" name="postcode" value="SA11AA" type="text" maxlength="8" autocomplete="off">
+			</div>
+		
+
+		<div class="form-item">
+			<label for="email">
+			Email Address
+			</label>
+			<input id="email" name="email" value="joe.bloggs@provider.co.uk" type="text" maxlength="300" autocomplete="off">
+			</div>
+			
+			<div class="form-item">
+			<label for="homeTel">
+			Home Telephone Number
+			</label>
+			<input id="homeTel" name="homeTel" value="01792 123456" type="text" maxlength="12" autocomplete="off">
+			</div>
+			
+			<div class="form-item">
+			<label for="mobTel">
+			Mobile Telephone Number
+			</label>
+			<input id="mobTel" name="mobTel" value="07700 123456" type="text" maxlength="12" autocomplete="off">
+			</div>
+	
+   <div class="form-steps">
+   <a href="manage-driver-record.html" class="button">Update</a></td>
+	<a id="backButton" href="manage-driver-record.html" class="button-secondary">Back</a>
+   
+
+</div>
+   </p>
 </div>
 </div>
 
